@@ -1,0 +1,9 @@
+baseURL = "http://morgankansanen.com/"
+languageCode = "en-us"
+title = "Morgan <br> Kansanen"
+
+[menu]
+[[menu.main]]
+  identifier = 'musings'
+  name = 'musings'
+  url = '/posts/'

@@ -1,0 +1,55 @@
+$font-family: Helvetica, sans-serif
+$primary-color: #2A2A2A
+$link-color: #3455db
+
+body
+  font-family: $font-family
+  color: $primary-color
+
+  ul
+    list-style-type: none
+    padding: 0px
+  li
+    padding: 0.5rem 0rem
+  a
+    text-decoration: none
+    color: $link-color
+  img
+    max-width: 100%
+    max-height: 100%
+
+#content
+  display: flex
+  flex-wrap: wrap
+  padding: 0 0 3rem 0
+  gap: 1rem
+
+#sidebar
+  flex-grow: 1
+  text-align: center
+  padding: 0rem 3rem
+
+#main-content
+  flex-basis: 0
+  flex-grow: 999
+  min-width: 60%
+  padding: 0rem 3rem
+
+#footer
+  text-align: center
+  p
+    font-size: 12px
+    margin: 0.125rem
+
+  div.social
+    display: inline-block
+    padding: 0.125rem
+    height: 16px
+    width: 16px
+
+.avatar
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  overflow: hidden
+  margin: auto

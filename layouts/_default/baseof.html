@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal website of Morgan Kansanen">
+    <meta name="keywords" content="blog, programming, Morgan Kansanen">
+    <meta name="author" content="Morgan Kansanen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    {{ $style := resources.Get "sass/main.sass" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <title>
+      {{ block "title" . }}
+        {{ .Site.Title | safeHTML }}
+      {{ end }}
+    </title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="sidebar">
+        <header>
+          <h2>{{ .Site.Title  | safeHTML }}</h2>
+        </header>
+        <ul>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+            <li>
+              <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div id="main-content">
+        {{ block "main" . }}
+        {{ end }}
+      </div>
+    </div>
+    {{ block "footer" . }}
+    {{ end }}
+  </body>
+</html>
