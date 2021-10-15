@@ -10,18 +10,23 @@
     <!-- CSS -->
     {{ $style := resources.Get "sass/main.sass" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="/css/highlighter.css">
 
     <title>
       {{ block "title" . }}
-        {{ .Site.Title | safeHTML }}
+        {{ .Site.Title }}
       {{ end }}
     </title>
   </head>
   <body>
     <div id="content">
       <div id="sidebar">
-        <header>
-          <h2>{{ .Site.Title  | safeHTML }}</h2>
+        <header class="inline-block">
+          <a href="/">
+            <div id="site-title">
+              <h4 >{{ replace .Site.Title  " " "<br>" | safeHTML }}</h4>
+            </div>
+          </a>
         </header>
         <ul>
           {{ $currentPage := . }}
