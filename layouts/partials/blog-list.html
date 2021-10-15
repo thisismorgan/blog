@@ -1,0 +1,12 @@
+<ul class="list">
+  {{ range (where .Site.RegularPages.ByPublishDate "Section" "blog") }}
+    <li>
+      <div>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </div>
+      <div>
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+      </div>
+    </li>
+  {{ end }}
+</ul>
