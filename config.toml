@@ -2,3 +2,9 @@ baseURL = "http://morgankansanen.com/"
 languageCode = "en-us"
 title = "morgan kansanen"
 pygmentsUseClasses = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = true
+    startLevel = 3

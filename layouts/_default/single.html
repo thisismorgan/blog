@@ -1,4 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <p>{{ .Content }}</p>
+  {{ if .Params.tableOfContents }}
+    {{ partial "table-of-contents" .}}
+  {{ end }}
+  {{ .Content }}
 {{ end }}
