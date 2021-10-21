@@ -10,7 +10,6 @@
     <!-- CSS -->
     {{ $style := resources.Get "sass/main.sass" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="stylesheet" href="/css/highlighter.css">
 
     <title>
       {{ block "title" . }}

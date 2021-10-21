@@ -1,0 +1,240 @@
+@mixin light-highlighter
+  /* Background
+  .chroma
+    background-color: #f8f8f8
+
+    .x
+      color: #000000
+
+    .err
+      color: #a40000
+
+    .lntd
+      vertical-align: top
+      padding: 0
+      margin: 0
+      border: 0
+
+    .lntable
+      border-spacing: 0
+      padding: 0
+      margin: 0
+      border: 0
+      width: auto
+      overflow: auto
+      display: block
+
+    .hl
+      display: block
+      width: 100%
+      background-color: #ffffcc
+
+    .lnt, .ln
+      margin-right: 0.4em
+      padding: 0 0.4em 0 0.4em
+      color: #7f7f7f
+
+    .k, .kc, .kd, .kn, .kp, .kr, .kt
+      color: #204a87
+      font-weight: bold
+
+    .n
+      color: #000000
+
+    .na
+      color: #c4a000
+
+    .nb
+      color: #204a87
+
+    .bp
+      color: #3465a4
+
+    .nc, .no
+      color: #000000
+
+    .nd
+      color: #5c35cc
+      font-weight: bold
+
+    .ni
+      color: #ce5c00
+
+    .ne
+      color: #cc0000
+      font-weight: bold
+
+    .nf, .fm
+      color: #000000
+
+    .nl
+      color: #f57900
+
+    .nn, .nx, .py
+      color: #000000
+
+    .nt
+      color: #204a87
+      font-weight: bold
+
+    .nv, .vc, .vg, .vi, .vm, .l, .ld
+      color: #000000
+
+    .s, .sa, .sb, .sc, .dl
+      color: #4e9a06
+
+    .sd
+      color: #8f5902
+      font-style: italic
+
+    .s2, .se, .sh, .si, .sx, .sr, .s1, .ss
+      color: #4e9a06
+
+    .m, .mb, .mf, .mh, .mi, .il, .mo
+      color: #0000cf
+      font-weight: bold
+
+    .o
+      color: #ce5c00
+      font-weight: bold
+
+    .ow
+      color: #204a87
+      font-weight: bold
+
+    .p
+      color: #000000
+      font-weight: bold
+
+    .c, .ch, .cm, .c1, .cs, .cp, .cpf
+      color: #8f5902
+      font-style: italic
+
+    .g
+      color: #000000
+
+    .gd
+      color: #a40000
+
+    .ge
+      color: #000000
+      font-style: italic
+
+    .gr
+      color: #ef2929
+
+    .gh
+      color: #000080
+      font-weight: bold
+
+    .gi
+      color: #00a000
+
+    .go
+      color: #000000
+      font-style: italic
+
+    .gp
+      color: #8f5902
+
+    .gs
+      color: #000000
+      font-weight: bold
+
+    .gu
+      color: #800080
+      font-weight: bold
+
+    .gt
+      color: #a40000
+      font-weight: bold
+
+    .gl
+      color: #000000
+      text-decoration: underline
+
+    .w
+      color: #f8f8f8
+      text-decoration: underline
+
+  /* Other
+  /* Error
+  /* LineTableTD
+  /* LineTable
+  /* LineHighlight
+  /* LineNumbersTable
+  /* LineNumbers
+  /* Keyword
+  /* KeywordConstant
+  /* KeywordDeclaration
+  /* KeywordNamespace
+  /* KeywordPseudo
+  /* KeywordReserved
+  /* KeywordType
+  /* Name
+  /* NameAttribute
+  /* NameBuiltin
+  /* NameBuiltinPseudo
+  /* NameClass
+  /* NameConstant
+  /* NameDecorator
+  /* NameEntity
+  /* NameException
+  /* NameFunction
+  /* NameFunctionMagic
+  /* NameLabel
+  /* NameNamespace
+  /* NameOther
+  /* NameProperty
+  /* NameTag
+  /* NameVariable
+  /* NameVariableClass
+  /* NameVariableGlobal
+  /* NameVariableInstance
+  /* NameVariableMagic
+  /* Literal
+  /* LiteralDate
+  /* LiteralString
+  /* LiteralStringAffix
+  /* LiteralStringBacktick
+  /* LiteralStringChar
+  /* LiteralStringDelimiter
+  /* LiteralStringDoc
+  /* LiteralStringDouble
+  /* LiteralStringEscape
+  /* LiteralStringHeredoc
+  /* LiteralStringInterpol
+  /* LiteralStringOther
+  /* LiteralStringRegex
+  /* LiteralStringSingle
+  /* LiteralStringSymbol
+  /* LiteralNumber
+  /* LiteralNumberBin
+  /* LiteralNumberFloat
+  /* LiteralNumberHex
+  /* LiteralNumberInteger
+  /* LiteralNumberIntegerLong
+  /* LiteralNumberOct
+  /* Operator
+  /* OperatorWord
+  /* Punctuation
+  /* Comment
+  /* CommentHashbang
+  /* CommentMultiline
+  /* CommentSingle
+  /* CommentSpecial
+  /* CommentPreproc
+  /* CommentPreprocFile
+  /* Generic
+  /* GenericDeleted
+  /* GenericEmph
+  /* GenericError
+  /* GenericHeading
+  /* GenericInserted
+  /* GenericOutput
+  /* GenericPrompt
+  /* GenericStrong
+  /* GenericSubheading
+  /* GenericTraceback
+  /* GenericUnderline
+  /* TextWhitespace

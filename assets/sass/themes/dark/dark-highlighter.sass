@@ -1,0 +1,250 @@
+@mixin dark-highlighter
+  /* Background
+  .chroma
+    color: #d0d0d0
+    background-color: #202020
+
+    .x
+      color: #d0d0d0
+
+    .err
+      color: #a61717
+      background-color: #e3d2d2
+
+    .lntd
+      vertical-align: top
+      padding: 0
+      margin: 0
+      border: 0
+
+    .lntable
+      border-spacing: 0
+      padding: 0
+      margin: 0
+      border: 0
+      width: auto
+      overflow: auto
+      display: block
+
+    .hl
+      display: block
+      width: 100%
+      background-color: #ffffcc
+
+    .lnt, .ln
+      margin-right: 0.4em
+      padding: 0 0.4em 0 0.4em
+      color: #686868
+
+    .k, .kc, .kd, .kn
+      color: #6ab825
+      font-weight: bold
+
+    .kp
+      color: #6ab825
+
+    .kr, .kt
+      color: #6ab825
+      font-weight: bold
+
+    .n
+
+    .na
+      color: #bbbbbb
+
+    .nb
+      color: #24909d
+
+    .bp
+
+    .nc
+      color: #447fcf
+      text-decoration: underline
+
+    .no
+      color: #40ffff
+
+    .nd
+      color: #ffa500
+
+    .ni
+
+    .ne
+      color: #bbbbbb
+
+    .nf
+      color: #447fcf
+
+    .fm, .nl
+
+    .nn
+      color: #447fcf
+      text-decoration: underline
+
+    .nx, .py
+      color: #d0d0d0
+
+    .nt
+      color: #6ab825
+      font-weight: bold
+
+    .nv
+      color: #40ffff
+
+    .vc, .vg, .vi, .vm, .l, .ld
+
+    .s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si
+      color: #ed9d13
+
+    .sx
+      color: #ffa500
+
+    .sr, .s1, .ss
+      color: #ed9d13
+
+    .m, .mb, .mf, .mh, .mi, .il, .mo
+      color: #3677a9
+
+    .o
+
+    .ow
+      color: #6ab825
+      font-weight: bold
+
+    .p
+      color: #d0d0d0
+
+    .c, .ch, .cm, .c1
+      color: #999999
+      font-style: italic
+
+    .cs
+      color: #e50808
+      background-color: #520000
+      font-weight: bold
+
+    .cp, .cpf
+      color: #cd2828
+      font-weight: bold
+
+    .g
+
+    .gd
+      color: #d22323
+
+    .ge
+      font-style: italic
+
+    .gr
+      color: #d22323
+
+    .gh
+      color: #ffffff
+      font-weight: bold
+
+    .gi
+      color: #589819
+
+    .go
+      color: #cccccc
+
+    .gp
+      color: #aaaaaa
+
+    .gs
+      font-weight: bold
+
+    .gu
+      color: #ffffff
+      text-decoration: underline
+
+    .gt
+      color: #d22323
+
+    .gl
+      text-decoration: underline
+
+    .w
+      color: #666666
+
+  /* Other
+  /* Error
+  /* LineTableTD
+  /* LineTable
+  /* LineHighlight
+  /* LineNumbersTable
+  /* LineNumbers
+  /* Keyword
+  /* KeywordConstant
+  /* KeywordDeclaration
+  /* KeywordNamespace
+  /* KeywordPseudo
+  /* KeywordReserved
+  /* KeywordType
+  /* Name
+  /* NameAttribute
+  /* NameBuiltin
+  /* NameBuiltinPseudo
+  /* NameClass
+  /* NameConstant
+  /* NameDecorator
+  /* NameEntity
+  /* NameException
+  /* NameFunction
+  /* NameFunctionMagic
+  /* NameLabel
+  /* NameNamespace
+  /* NameOther
+  /* NameProperty
+  /* NameTag
+  /* NameVariable
+  /* NameVariableClass
+  /* NameVariableGlobal
+  /* NameVariableInstance
+  /* NameVariableMagic
+  /* Literal
+  /* LiteralDate
+  /* LiteralString
+  /* LiteralStringAffix
+  /* LiteralStringBacktick
+  /* LiteralStringChar
+  /* LiteralStringDelimiter
+  /* LiteralStringDoc
+  /* LiteralStringDouble
+  /* LiteralStringEscape
+  /* LiteralStringHeredoc
+  /* LiteralStringInterpol
+  /* LiteralStringOther
+  /* LiteralStringRegex
+  /* LiteralStringSingle
+  /* LiteralStringSymbol
+  /* LiteralNumber
+  /* LiteralNumberBin
+  /* LiteralNumberFloat
+  /* LiteralNumberHex
+  /* LiteralNumberInteger
+  /* LiteralNumberIntegerLong
+  /* LiteralNumberOct
+  /* Operator
+  /* OperatorWord
+  /* Punctuation
+  /* Comment
+  /* CommentHashbang
+  /* CommentMultiline
+  /* CommentSingle
+  /* CommentSpecial
+  /* CommentPreproc
+  /* CommentPreprocFile
+  /* Generic
+  /* GenericDeleted
+  /* GenericEmph
+  /* GenericError
+  /* GenericHeading
+  /* GenericInserted
+  /* GenericOutput
+  /* GenericPrompt
+  /* GenericStrong
+  /* GenericSubheading
+  /* GenericTraceback
+  /* GenericUnderline
+  /* TextWhitespace

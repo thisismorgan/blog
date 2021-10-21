@@ -1,0 +1,12 @@
+@import styles
+@import dark-highlighter
+
+@mixin dark-theme
+  $primary-color: #EBEBEB
+  $contrast-color: #BFC7FD
+  $background-color: #2A2A2A
+
+  $theme: ("primary-color": $primary-color, "contrast-color": $contrast-color, "background-color": $background-color)
+
+  @include styles($theme)
+  @include dark-highlighter
