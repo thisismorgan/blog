@@ -1,4 +1,9 @@
-{{ if .Params.tableOfContents }}
-  {{ partial "table-of-contents" .}}
-{{ end }}
-{{ .Content }}
+<article>
+  {{ if .Params.tableOfContents }}
+    <div>
+      <h4 id="toc-title">Table of Contents</h4>
+      {{ .Page.TableOfContents }}
+    <div>
+  {{ end }}
+  {{ .Content }}
+</article>

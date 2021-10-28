@@ -19,8 +19,8 @@
   </head>
   <body>
     <div id="content">
-      <div id="sidebar">
-        <header class="inline-block">
+      <aside id="sidebar">
+        <header>
           <a href="/">
             <div id="site-title">
               <h4 >{{ replace .Site.Title  " " "<br>" | safeHTML }}</h4>
@@ -35,11 +35,11 @@
             </li>
           {{ end }}
         </ul>
-      </div>
-      <div id="main-content">
+      </aside>
+      <main id="main-content">
         {{ block "main" . }}
         {{ end }}
-      </div>
+      </main>
     </div>
     {{ block "footer" . }}
     {{ end }}

@@ -1,26 +1,40 @@
 @use "sass:map"
 
 @mixin styles($theme)
-  $font-family: Helvetica, sans-serif
-
   body
-    font-family: $font-family
+    font-family: Helvetica, sans-serif
     color: map-get($theme, "primary-color")
     background-color: map-get($theme, "background-color")
     margin: 0
 
     ul
       list-style-type: none
-      padding: 0px
-    li
-      padding: 0.5rem 0rem
     a
       text-decoration: none
       color: map-get($theme, "contrast-color")
     img
       max-width: 100%
       max-height: 100%
-      
+    article
+      ul
+        list-style-type: disc
+      li
+        padding: 0.125rem
+    aside
+      header
+        display: inline-block
+    footer
+      padding-top: 4rem
+      text-align: center
+      p
+        font-size: 12px
+        margin: 0.125rem
+
+      div.social
+        display: inline-block
+        padding: 0.125rem
+        height: 16px
+        width: 16px
   #site-title
     color: map-get($theme, "background-color")
     border: 0.125rem solid map-get($theme, "primary-color")
@@ -54,33 +68,23 @@
     padding: 0 0 3rem 0
     gap: 1rem
 
-    #sidebar
-      flex-grow: 1
-      text-align: right
-      padding: 0rem 3rem
+  #sidebar
+    flex-grow: 1
+    text-align: right
+    padding: 0rem 3rem
 
-    #main-content
-      flex-basis: 0
-      flex-grow: 999
-      min-width: 45%
-      padding: 0rem 3rem
+  #main-content
+    flex-basis: 0
+    flex-grow: 999
+    min-width: 45%
+    padding: 0rem 3rem
 
-    #footer
-      text-align: center
-      p
-        font-size: 12px
-        margin: 0.125rem
-
-      div.social
-        display: inline-block
-        padding: 0.125rem
-        height: 16px
-        width: 16px
-
-    .inline-block
-      display: inline-block
-
-    .list
-      time
-        font-style: italic
-        font-size: 12px
+  .list
+    ul
+      list-style-type: none
+      padding: 0px
+    li
+      padding: 0.5rem 0rem
+    time
+      font-style: italic
+      font-size: 12px
