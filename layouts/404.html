@@ -1,0 +1,14 @@
+{{ define "title" }}
+  404 | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  <main id="mayhem">
+    <div>
+      <p>You took the wrong fork dude.</p>
+    </div>
+    <div>
+      <a href="{{ "/" | relURL }}">go home</a>
+    </div>
+  </main>
+{{ end }}
