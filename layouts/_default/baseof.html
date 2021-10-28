@@ -6,15 +6,24 @@
     <meta name="keywords" content="blog, programming, Morgan Kansanen">
     <meta name="author" content="Morgan Kansanen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
     <link rel="icon" href="/images/favicon32.png">
     <link rel="apple-touch-icon" href="/images/favicon57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon114.png" />
+
+    <!-- Generator -->
     {{ .Hugo.Generator }}
 
     <!-- CSS -->
     {{ $style := resources.Get "sass/main.sass" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <!-- RSS -->
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 
     <title>
       {{ block "title" . }}

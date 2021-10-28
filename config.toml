@@ -2,6 +2,7 @@ baseURL = "http://morgankansanen.com/"
 languageCode = "en-us"
 title = "morgan kansanen"
 pygmentsUseClasses = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [markup]
   [markup.tableOfContents]
