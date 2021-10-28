@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Personal website of Morgan Kansanen">
+    <meta name="description" content="{{ cond (not .Summary) "Personal website of Morgan Kansanen" .Summary }}">
     <meta name="keywords" content="blog, programming, Morgan Kansanen">
     <meta name="author" content="Morgan Kansanen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
