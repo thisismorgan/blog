@@ -3,12 +3,12 @@
     <div>
       <div class="social">
         <a href="https://github.com/thisismorgan" rel="noopener" target="_blank">
-          <img src="/images/github.png"></img>
+          {{ readFile "static/images/github.svg" | safeHTML }}
         </a>
       </div>
       <div class="social">
         <a href="https://www.instagram.com/morgan.knits/" rel="noopener" target="_blank">
-          <img src="/images/instagram.png"></img>
+          {{ readFile "static/images/instagram.svg" | safeHTML }}
         </a>
       </div>
     </div>
