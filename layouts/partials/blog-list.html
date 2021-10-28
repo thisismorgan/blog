@@ -1,6 +1,6 @@
-<ul class="list">
-  {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "blog") }}
-    <li>
+<ul>
+  {{ range (where .Site.RegularPages.ByPublishDate "Section" "blog") }}
+    <li class="padding-small">
       <div>
         <a href="{{.Permalink}}">{{.Title}}</a>
       </div>
