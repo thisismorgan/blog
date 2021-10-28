@@ -6,6 +6,7 @@
     <meta name="keywords" content="blog, programming, Morgan Kansanen">
     <meta name="author" content="Morgan Kansanen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ .Hugo.Generator }}
 
     <!-- CSS -->
     {{ $style := resources.Get "sass/main.sass" | toCSS | minify | fingerprint }}
