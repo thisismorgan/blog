@@ -1,4 +1,4 @@
 [submodule "content"]
 	path = content
-	url = git@github.com-personal:thisismorgan/blog-content.git
+	url = git@github.com:thisismorgan/blog-content.git
 	branch = release
