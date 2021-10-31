@@ -2,9 +2,12 @@
 @import mixins
 
 @mixin styles($theme)
+  html
+    font-size: 62.5%
+    -webkit-text-size-adjust: 100%
   body
     font-family: Helvetica, sans-serif
-    font-size: 1em
+    font-size: 1.6rem
     color: map-get($theme, "primary-color")
     background-color: map-get($theme, "background-color")
     margin: 0
@@ -18,7 +21,7 @@
       @include padding-xlarge
       text-align: center
       p
-        font-size: 0.75em
+        font-size: 1.2rem
         margin: 0.125em
 
       div.social
@@ -34,9 +37,11 @@
     ol
       list-style-type: disc
       margin: 0
+    pre code
+      font-size: 1.4rem
     time
       font-style: italic
-      font-size: 0.75em
+      font-size: 1.2rem
     ul
       list-style-type: none
       padding: 0
