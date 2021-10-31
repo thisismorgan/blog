@@ -18,7 +18,7 @@
 
     <!-- CSS -->
     {{ $style := resources.Get "sass/main.sass" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
     <!-- RSS -->
     {{ with .OutputFormats.Get "rss" -}}
