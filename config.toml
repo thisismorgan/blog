@@ -1,4 +1,4 @@
-baseURL = "http://morgankansanen.com/"
+baseURL = "https://www.morgankansanen.com/"
 languageCode = "en-us"
 title = "morgan kansanen"
 pygmentsUseClasses = true
