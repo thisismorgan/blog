@@ -1,5 +1,5 @@
 <ul>
-  {{ range (where .Site.RegularPages.ByPublishDate "Section" "blog") }}
+  {{ range (where .Site.RegularPages.ByPublishDate.Reverse "Section" "blog") }}
     <li class="padding-small">
       <div>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>

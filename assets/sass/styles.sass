@@ -17,6 +17,13 @@
     aside
       header
         display: inline-block
+    blockquote
+      color: map-get($theme, "primary-color-light")
+      border-left: 0.5rem solid map-get($theme, "blockquote-color")
+      font-style: italic
+      padding: 0.6rem 2rem
+      margin: 2rem
+
     footer
       @include padding-xlarge
       text-align: center

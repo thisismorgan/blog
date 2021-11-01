@@ -3,10 +3,12 @@
 
 @mixin light-theme
   $primary-color: #2A2A2A
+  $primary-color-light: #525252
   $contrast-color: #3455DB
   $background-color: #FFFFFF
+  $blockquote-color: #E0E0E0
 
-  $theme: ("primary-color": $primary-color, "contrast-color": $contrast-color, "background-color": $background-color)
+  $theme: ("primary-color": $primary-color, "primary-color-light": $primary-color-light, "blockquote-color": $blockquote-color, "contrast-color": $contrast-color, "background-color": $background-color)
 
   @include styles($theme)
   @include light-highlighter

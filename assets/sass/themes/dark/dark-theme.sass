@@ -3,10 +3,12 @@
 
 @mixin dark-theme
   $primary-color: #EBEBEB
+  $primary-color-light: #BABABA
   $contrast-color: #BFC7FD
   $background-color: #2A2A2A
+  $blockquote-color: #696969
 
-  $theme: ("primary-color": $primary-color, "contrast-color": $contrast-color, "background-color": $background-color)
+  $theme: ("primary-color": $primary-color, "primary-color-light": $primary-color-light, "blockquote-color": $blockquote-color, "contrast-color": $contrast-color, "background-color": $background-color)
 
   @include styles($theme)
   @include dark-highlighter
